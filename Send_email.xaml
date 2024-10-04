@@ -104,6 +104,9 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="Send_email" sap:VirtualizedContainerService.HintSize="867.2,398.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -126,7 +129,7 @@
         <ui:SendMail.Files>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
             <InArgument x:TypeArguments="x:String">
-              <Literal x:TypeArguments="x:String">C:\Users\SAGAR_007\Documents\UiPath\Travel_bot\FlightData.xlsx</Literal>
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;C:\Users\SAGAR_007\Documents\UiPath\Travel_bot\FlightData&quot;+Now.toString(&quot;mm-dd-yy&quot;)+&quot;.xlsx&quot;" />
             </InArgument>
           </scg:List>
         </ui:SendMail.Files>
