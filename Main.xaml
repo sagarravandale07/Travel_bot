@@ -1,0 +1,327 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="867.2,2358.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Departure_airport" />
+      <Variable x:TypeArguments="x:String" Name="Destination_airport" />
+      <Variable x:TypeArguments="x:String" Name="travel_date" />
+      <Variable x:TypeArguments="x:String" Name="email_id" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466.4,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Departure_airport" Title="Departure_airport">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Departure_airport]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466.4,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Destination_airport" Title="Destination_airport">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Destination_airport]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466.4,56.8" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="date" Title="date">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[travel_date]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="466.4,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="email_id" Title="email_id">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email_id]</OutArgument>
+      </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InputDialog>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="466.4,166.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Chrome" />
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,182.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://www.makemytrip.com/">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="382.4,130.4" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7986d863-76dd-4c6e-b90d-541d93e117a9" InformativeScreenshot="61b195f5c0aa42905deddfb5531051fd" Selector="&lt;webctrl class='commonModal__close' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+    </ui:OpenBrowser>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe MakeMyTrip'" sap:VirtualizedContainerService.HintSize="466.4,268.8" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="c5dd1b2d91d5b68fa4aee8f8ea58fca1" Selector="&lt;html app='chrome.exe' title='MakeMyTrip*' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="'INPUT  fromCity'" sap:VirtualizedContainerService.HintSize="466.4,188" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[Departure_airport+ &quot;[k(down)][k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13298c42-ce97-4649-a8f5-408fe4bf0ac8" InformativeScreenshot="cb09a341abb6f6d1dc359db72a7c0024" Selector="&lt;html app='chrome.exe' title='MakeMyTrip*' /&gt;&lt;webctrl tag='INPUT' aaname='From*' type='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="'INPUT  ToCity'" sap:VirtualizedContainerService.HintSize="466.4,188" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[Destination_airport+ &quot;[k(down)][k(enter)]&quot;]">
+      <ui:TypeInto.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="13298c42-ce97-4649-a8f5-408fe4bf0ac8" InformativeScreenshot="730f75bd78235545dbd661c5530fea46" Selector="&lt;html app='chrome.exe' title='MakeMyTrip*' /&gt;&lt;webctrl tag='INPUT' aaname='To*' type='text' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:TypeInto.Target>
+    </ui:TypeInto>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="466.4,139.2" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="41919b6b-1a66-4fe5-9921-b9463da14189" InformativeScreenshot="eff27400c79e366e745ec14ebdc452a9" Selector="&lt;html app='chrome.exe' title='MakeMyTrip*' /&gt;&lt;webctrl aria-label='*' aria-role='gridcell' tag='DIV' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A'" sap:VirtualizedContainerService.HintSize="466.4,139.2" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+      <ui:Click.CursorPosition>
+        <ui:CursorPosition Position="Center">
+          <ui:CursorPosition.OffsetX>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetX>
+          <ui:CursorPosition.OffsetY>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:CursorPosition.OffsetY>
+        </ui:CursorPosition>
+      </ui:Click.CursorPosition>
+      <ui:Click.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="153cb055-2dd3-4065-a9be-e0b1edfcc1dc" InformativeScreenshot="fcd715670c2049dee41ed6d508218c90" Selector="&lt;html app='chrome.exe' title='MakeMyTrip*' /&gt;&lt;webctrl aaname='Search' parentid='top-banner' tag='A' /&gt;">
+          <ui:Target.TimeoutMS>
+            <InArgument x:TypeArguments="x:Int32" />
+          </ui:Target.TimeoutMS>
+          <ui:Target.WaitForReady>
+            <InArgument x:TypeArguments="ui:WaitForReady" />
+          </ui:Target.WaitForReady>
+        </ui:Target>
+      </ui:Click.Target>
+    </ui:Click>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: MakeMyTrip" sap:VirtualizedContainerService.HintSize="466.4,273.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="214e1161-33eb-43df-a575-f6e1e1b3517f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Flightname'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='dept_time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='totaltime'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='dest_time'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='label' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='p' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382.4,180.8" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="214e1161-33eb-43df-a575-f6e1e1b3517f" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.makemytrip.com/flight/search?itinerary=PNQ-HYD-08/10/2024&amp;tripType=O&amp;paxType=A-1_C-0_I-0&amp;intl=false&amp;cabinClass=E&amp;ccde=IN&amp;lang=eng" DesignTimeRectangle="609, 575, 1100, 1767" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='clusterContent' parentid='listing-id' tag='DIV' /&gt;" Guid="2636222b-acc7-4c32-89ec-8c7d9e4d6e45" InformativeScreenshot="bb8f77bf53baf72a8a43dd0f4e8648c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MakeMyTrip' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="985fba1790c0cdcdf3436b9bfc2f67da.jpg" Selector="&lt;html app='chrome.exe' title='MakeMyTrip' /&gt;" Title="MakeMyTrip" Url="https://www.makemytrip.com/flight/search?itinerary=PNQ-HYD-08/10/2024&amp;tripType=O&amp;paxType=A-1_C-0_I-0&amp;intl=false&amp;cabinClass=E&amp;ccde=IN&amp;lang=eng" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="466.4,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="FlightData.xlsx" />
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send_email - Invoke Workflow File (Send_email.xaml)" sap:VirtualizedContainerService.HintSize="466.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Send_email.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="email_id">[email_id]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+  </Sequence>
+</Activity>
